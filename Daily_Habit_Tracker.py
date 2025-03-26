@@ -67,7 +67,7 @@ class GODSystem:
                 else:
                     break
         self.streak = current_streak
-
+            
     def calculate_daily_score(self, fecha_str, no_alcohol, no_media, no_porno, descanso_8h, minutos_meditacion, buen_circulo, ejercicio, horario_god, certificaciones):
         """Calcula puntos y actualiza la racha para un nuevo registro."""
         fecha = datetime.strptime(fecha_str, "%d/%m/%Y")
@@ -99,8 +99,15 @@ class GODSystem:
         self.points += daily_points
         self.update_level()
 
-        # Guardar certificaciones con progreso
-        cert_str = " ".join([f"{k}:{v}%" for k, v in certificaciones.items() if v > 0])
+        # Actualizar el progreso acumulado de las certificaciones
+        for cert, prog in certificaciones.items():
+            if cert in self.certificaciones_progreso:
+                self.certificaciones_progreso[cert] += prog  # Sumar el progreso diario al acumulado
+
+        # Crear el string con el progreso acumulado para el historial
+        cert_str = " ".join([f"{k}:{self.certificaciones_progreso[k]}%" for k in self.certificaciones_progreso if self.certificaciones_progreso[k] > 0])
+
+        # Guardar en el historial
         self.daily_logs.append({
             "Fecha": fecha,
             "No Alcohol (0%)": no_alcohol,
@@ -114,7 +121,10 @@ class GODSystem:
             "Certificaciones Avanzadas": cert_str
         })
 
+        # Si tienes una función save_to_file, actualízala con el cert_str acumulado
         self.save_to_file(fecha_str, no_alcohol, no_media, no_porno, descanso_8h, minutos_meditacion, buen_circulo, ejercicio, horario_god, cert_str)
+
+     
 
     def save_to_file(self, fecha, no_alcohol, no_media, no_porno, descanso_8h, minutos_meditacion, buen_circulo, ejercicio, horario_god, certificaciones):
         """Guarda la entrada en 'historial_god.md' con el formato exacto."""
@@ -226,7 +236,7 @@ def main():
 
             # Sumar progreso acumulado
             for cert, prog in certificaciones.items():
-                god_system.certificaciones_progreso[cert] += prog
+                god_system.certificaciones_progreso[cert] += prog -1
 
             god_system.calculate_daily_score(fecha_str, no_alcohol, no_media, no_porno, descanso_8h, minutos_meditacion, buen_circulo, ejercicio, horario_god, certificaciones)
 
