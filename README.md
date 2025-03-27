@@ -4,9 +4,12 @@
 
 ## Descripción
 
-**Daily Habit Tracker** es un sistema de seguimiento personal desarrollado en Python que te permite monitorear y mejorar tus hábitos diarios. Este programa registra tu progreso en áreas clave como la abstinencia de alcohol, redes sociales y pornografía, el descanso de 8 horas, la meditación, la calidad de tus relaciones sociales, el ejercicio físico y la adherencia a un horario específico denominado "Horario GOD". Además, incluye un seguimiento de las horas dedicadas a certificaciones técnicas como Google, CompTIA y eJPTv2.
+**Daily Habit Tracker** es un sistema de seguimiento personal desarrollado en Python que te permite monitorear y mejorar tus hábitos diarios. Este programa registra tu progreso en áreas clave como la
+abstinencia de alcohol, redes sociales y pornografía, el descanso de 8 horas, la meditación, la calidad de tus relaciones sociales, el ejercicio físico y la adherencia a un horario específico denominado
+"Horario GOD". Además, incluye un seguimiento de las horas dedicadas a certificaciones técnicas como Google, CompTIA y eJPTv2.
 
-El sistema calcula puntos diarios basados en el cumplimiento de estos hábitos, mantiene una racha si sigues el "Horario GOD" de manera consecutiva y te permite avanzar a través de niveles según los puntos acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown (`historial_god.md`) para facilitar su revisión y seguimiento.
+El sistema calcula puntos diarios basados en el cumplimiento de estos hábitos, mantiene una racha si sigues el "Horario GOD" de manera consecutiva y te permite avanzar a través de niveles según los puntos
+acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown (`historial_god.md`) para facilitar su revisión y seguimiento.
 
 ## Características
 
