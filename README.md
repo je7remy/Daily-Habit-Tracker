@@ -1,15 +1,10 @@
----
-
 # Daily Habit Tracker
 
 ## Descripción
 
-**Daily Habit Tracker** es un sistema de seguimiento personal desarrollado en Python que te permite monitorear y mejorar tus hábitos diarios. Este programa registra tu progreso en áreas clave como la
-abstinencia de alcohol, redes sociales y pornografía, el descanso de 8 horas, la meditación, la calidad de tus relaciones sociales, el ejercicio físico y la adherencia a un horario específico denominado
-"Horario GOD". Además, incluye un seguimiento de las horas dedicadas a certificaciones técnicas como Google, CompTIA y eJPTv2.
+**Daily Habit Tracker** es un sistema de seguimiento personal desarrollado en Python que te permite monitorear y mejorar tus hábitos diarios. Este programa registra tu progreso en áreas clave como la abstinencia de alcohol, redes sociales y pornografía, el descanso de 8 horas, la meditación, la calidad de tus relaciones sociales, el ejercicio físico y la adherencia a un horario específico denominado "Horario GOD". Además, incluye un seguimiento de las horas dedicadas a certificaciones técnicas como Google, CompTIA y eJPTv2.
 
-El sistema calcula puntos diarios basados en el cumplimiento de estos hábitos, mantiene una racha si sigues el "Horario GOD" de manera consecutiva y te permite avanzar a través de niveles según los puntos
-acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown (`historial_god.md`) para facilitar su revisión y seguimiento.
+El sistema calcula puntos diarios basados en el cumplimiento de estos hábitos, mantiene una racha si sigues el "Horario GOD" de manera consecutiva y te permite avanzar a través de niveles según los puntos acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown (`historial_god.md`) para facilitar su revisión y seguimiento.
 
 ## Características
 
@@ -24,7 +19,7 @@ acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown
 
 ## Requisitos
 
-- Python 3.x instalado en tu sistema.
+- **Python 3.x** instalado en tu sistema.
 
 ## Instalación
 
@@ -67,9 +62,8 @@ acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown
 - **Meditación**: Indica los minutos meditados (número entero).
 - **Certificaciones**: Ingresa las horas dedicadas a cada certificación (Google, CompTIA, eJPTv2) en formato decimal (ej. 2.5).
 
-#### Ejemplo de entrada
-
-```plaintext
+#### Ejemplo de entrada:
+```
 Ingresa la fecha (dd/mm/yyyy): 15/10/2023
 ¿Te abstuviste de alcohol? (✓/x): ✓
 ¿Evitaste redes sociales y contenido multimedia? (✓/x): ✓
@@ -84,9 +78,8 @@ Ingresa las horas dedicadas a CompTIA hoy (puede ser decimal): 1.0
 Ingresa las horas dedicadas a eJPTv2 hoy (puede ser decimal): 0
 ```
 
-#### Salida en consola
-
-```plaintext
+#### Salida en consola:
+```
 Puntos totales: 27
 Racha actual: 1
 Nivel: 1
@@ -97,22 +90,20 @@ Horas acumuladas en certificaciones:
 
 ### Visualizar historial
 
-Muestra el contenido completo de `historial_god.md` en la consola, seguido de las horas acumuladas en certificaciones.
+- Muestra el contenido completo de `historial_god.md` en la consola, seguido de las horas acumuladas en certificaciones.
 
-#### Ejemplo de historial en `historial_god.md`
-
-```markdown
+#### Ejemplo de historial en `historial_god.md`:
+```
 | Fecha      | No Alcohol (0%) | No Media (0%) | No Porno (0%) | 8H Descanso (100%) | Meditación (min) | Buen Círculo (100%) | Ejercicio (5:30-5:50 PM) | Horario GOD | Certificaciones Avanzadas |
-|------------|-----------------|---------------|---------------|--------------------|------------------|---------------------|--------------------------|-------------|---------------------------|
-| 15/10/2023 | ✓               | ✓             | ✓             | ✓                  | 20               | ✓                   | ✓                        | ✓           | Google:2.5h CompTIA:1.0h  |
+|------------|:---------------:|:-------------:|:-------------:|:------------------:|:----------------:|:-------------------:|:------------------------:|:-----------:|:------------------------:|
+| 15/10/2023 | ✓              | ✓            | ✓            | ✓                 | 20              | ✓                  | ✓                       | ✓          | Google:2.5h CompTIA:1.0h   |
 ```
 
-#### Salida en consola al visualizar
-
-```plaintext
+#### Salida en consola al visualizar:
+```
 | Fecha      | No Alcohol (0%) | No Media (0%) | No Porno (0%) | 8H Descanso (100%) | Meditación (min) | Buen Círculo (100%) | Ejercicio (5:30-5:50 PM) | Horario GOD | Certificaciones Avanzadas |
-|------------|-----------------|---------------|---------------|--------------------|------------------|---------------------|--------------------------|-------------|---------------------------|
-| 15/10/2023 | ✓               | ✓             | ✓             | ✓                  | 20               | ✓                   | ✓                        | ✓           | Google:2.5h CompTIA:1.0h  |
+|------------|:---------------:|:-------------:|:-------------:|:------------------:|:----------------:|:-------------------:|:------------------------:|:-----------:|:------------------------:|
+| 15/10/2023 | ✓              | ✓            | ✓            | ✓                 | 20              | ✓                  | ✓                       | ✓          | Google:2.5h CompTIA:1.0h   |
 
 Horas acumuladas en certificaciones:
   Google: 2.5 horas
@@ -121,7 +112,7 @@ Horas acumuladas en certificaciones:
 
 ### Salir
 
-Selecciona la opción **3** para cerrar el programa con un mensaje de despedida: `¡Hasta luego!`.
+- Selecciona la opción **3** para cerrar el programa con un mensaje de despedida: `¡Hasta luego!`.
 
 ## Estructura del proyecto
 
@@ -135,8 +126,7 @@ Selecciona la opción **3** para cerrar el programa con un mensaje de despedida:
 1. Abre un **issue** para discutir tu idea o reportar un problema.
 2. Envía un **pull request** con tus cambios.
 
-### Ideas para contribuir
-
+### Ideas para contribuir:
 - Agregar más hábitos personalizables.
 - Implementar una interfaz gráfica (GUI) con bibliotecas como Tkinter o PyQt.
 - Exportar el historial a otros formatos (CSV, JSON).
@@ -145,5 +135,3 @@ Selecciona la opción **3** para cerrar el programa con un mensaje de despedida:
 ## Licencia
 
 Este proyecto está licenciado bajo la [Licencia MIT](LICENSE). Consulta el archivo `LICENSE` para más detalles.
-
----
