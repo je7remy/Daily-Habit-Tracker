@@ -24,7 +24,7 @@ acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown
 
 ## Requisitos
 
-- **Python 3.x** instalado en tu sistema.
+- Python 3.x instalado en tu sistema.
 
 ## Instalación
 
@@ -67,8 +67,9 @@ acumulados (100 puntos por nivel). Los datos se almacenan en un archivo Markdown
 - **Meditación**: Indica los minutos meditados (número entero).
 - **Certificaciones**: Ingresa las horas dedicadas a cada certificación (Google, CompTIA, eJPTv2) en formato decimal (ej. 2.5).
 
-#### Ejemplo de entrada:
-```
+#### Ejemplo de entrada
+
+```plaintext
 Ingresa la fecha (dd/mm/yyyy): 15/10/2023
 ¿Te abstuviste de alcohol? (✓/x): ✓
 ¿Evitaste redes sociales y contenido multimedia? (✓/x): ✓
@@ -83,8 +84,9 @@ Ingresa las horas dedicadas a CompTIA hoy (puede ser decimal): 1.0
 Ingresa las horas dedicadas a eJPTv2 hoy (puede ser decimal): 0
 ```
 
-#### Salida en consola:
-```
+#### Salida en consola
+
+```plaintext
 Puntos totales: 27
 Racha actual: 1
 Nivel: 1
@@ -95,20 +97,22 @@ Horas acumuladas en certificaciones:
 
 ### Visualizar historial
 
-- Muestra el contenido completo de `historial_god.md` en la consola, seguido de las horas acumuladas en certificaciones.
+Muestra el contenido completo de `historial_god.md` en la consola, seguido de las horas acumuladas en certificaciones.
 
-#### Ejemplo de historial en `historial_god.md`:
-```
+#### Ejemplo de historial en `historial_god.md`
+
+```markdown
 | Fecha      | No Alcohol (0%) | No Media (0%) | No Porno (0%) | 8H Descanso (100%) | Meditación (min) | Buen Círculo (100%) | Ejercicio (5:30-5:50 PM) | Horario GOD | Certificaciones Avanzadas |
-|------------|:---------------:|:-------------:|:-------------:|:------------------:|:----------------:|:-------------------:|:------------------------:|:-----------:|:------------------------:|
-| 15/10/2023 | ✓              | ✓            | ✓            | ✓                 | 20              | ✓                  | ✓                       | ✓          | Google:2.5h CompTIA:1.0h |
+|------------|-----------------|---------------|---------------|--------------------|------------------|---------------------|--------------------------|-------------|---------------------------|
+| 15/10/2023 | ✓               | ✓             | ✓             | ✓                  | 20               | ✓                   | ✓                        | ✓           | Google:2.5h CompTIA:1.0h  |
 ```
 
-#### Salida en consola al visualizar:
-```
+#### Salida en consola al visualizar
+
+```plaintext
 | Fecha      | No Alcohol (0%) | No Media (0%) | No Porno (0%) | 8H Descanso (100%) | Meditación (min) | Buen Círculo (100%) | Ejercicio (5:30-5:50 PM) | Horario GOD | Certificaciones Avanzadas |
-|------------|:---------------:|:-------------:|:-------------:|:------------------:|:----------------:|:-------------------:|:------------------------:|:-----------:|:------------------------:|
-| 15/10/2023 | ✓              | ✓            | ✓            | ✓                 | 20              | ✓                  | ✓                       | ✓          | Google:2.5h CompTIA:1.0h |
+|------------|-----------------|---------------|---------------|--------------------|------------------|---------------------|--------------------------|-------------|---------------------------|
+| 15/10/2023 | ✓               | ✓             | ✓             | ✓                  | 20               | ✓                   | ✓                        | ✓           | Google:2.5h CompTIA:1.0h  |
 
 Horas acumuladas en certificaciones:
   Google: 2.5 horas
@@ -117,7 +121,7 @@ Horas acumuladas en certificaciones:
 
 ### Salir
 
-- Selecciona la opción **3** para cerrar el programa con un mensaje de despedida: `¡Hasta luego!`.
+Selecciona la opción **3** para cerrar el programa con un mensaje de despedida: `¡Hasta luego!`.
 
 ## Estructura del proyecto
 
@@ -131,7 +135,8 @@ Horas acumuladas en certificaciones:
 1. Abre un **issue** para discutir tu idea o reportar un problema.
 2. Envía un **pull request** con tus cambios.
 
-### Ideas para contribuir:
+### Ideas para contribuir
+
 - Agregar más hábitos personalizables.
 - Implementar una interfaz gráfica (GUI) con bibliotecas como Tkinter o PyQt.
 - Exportar el historial a otros formatos (CSV, JSON).
