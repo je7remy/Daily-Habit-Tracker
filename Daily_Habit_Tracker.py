@@ -1,6 +1,7 @@
 import csv
 import signal
 from datetime import datetime, timedelta
+from colorama import Fore, Back, Style
 
 class GODSystem:
     def __init__(self):
@@ -189,7 +190,7 @@ def main():
     signal.signal(signal.SIGINT, signal_handler)
 
     while True:
-        print("""
+        print(Fore.GREEN + """
 ██████╗  █████╗ ██╗██╗  ██╗   ██╗    ██╗  ██╗ █████╗ ██████╗ ██╗████████╗    ████████╗██████╗  █████╗  ██████╗██╗  ██╗███████╗██████╗ 
 ██╔══██╗██╔══██╗██║██║  ╚██╗ ██╔╝    ██║  ██║██╔══██╗██╔══██╗██║╚══██╔══╝    ╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
 ██║  ██║███████║██║██║   ╚████╔╝     ███████║███████║██████╔╝██║   ██║          ██║   ██████╔╝███████║██║     █████╔╝ █████╗  ██████╔╝
@@ -197,7 +198,7 @@ def main():
 ██████╔╝██║  ██║██║███████╗██║       ██║  ██║██║  ██║██████╔╝██║   ██║          ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
 ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚═╝       ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝   ╚═╝          ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝                                                                                                                         
 """)
-        print("\n--- Menú ---\n")
+        print(Style.RESET_ALL + "\n--- Menú ---\n")
         print("1. Ingresar datos del día")
         print("2. Visualizar historial")
         print("3. Salir\n")
