@@ -39,6 +39,7 @@
     
 - **Sábado – Misión “Tiempo de Reconexión” (SNP):**  
     Dedica tiempo a una actividad creativa o de ocio sin presiones (como pintar, escribir o disfrutar de un hobby), enfocándote en la relajación y conexión interior, activando tu SNP.
+    ###### **Ayuno**
     
 - **Domingo – Misión “Reflexión Estratégica” (SNP):**  
     Cierra la semana evaluando tus logros y aprendizajes. Dedica unos minutos a escribir tus reflexiones y planificar la semana siguiente de manera tranquila, permitiendo que tu SNP descanse y recargue energías.
@@ -56,7 +57,7 @@
 [[historial_god]]
 
 ---
-## Programa del Tablero de Control Personal:
+## Programa del Tablero de Control Personal (Código Original):
 
 
 ````python
